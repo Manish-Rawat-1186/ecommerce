@@ -1,0 +1,70 @@
+my - margin top and bottom
+<a href={`/product/${product.id}`} > for product id
+Variant:
+- uses only pre-defined classes
+- no need for an external library
+
+className:
+- can use custom classes
+- works the same as the HTML attribute class
+
+<Card.text as="div" mean i want to show as div
+
+//react
+--react router
+When using a website, it is essential for users to be able to view
+ different pages seamlessly, or to navigate from one page to another.
+  React Router is the library that makes this possible.
+
+  React creates single-page application and react router plays an
+   important role to display multiple views without having to reload
+   the browser in a single page application.
+
+   HTML5 History API, we have more control on playing with the browser history. 
+   For example, we have a way to add an entry in the history, or change the URL in the '
+   address bar without refreshing the page.
+
+   BrowserRouter>: BrowerRouter is a router implementation that has the ability to incorporate routing in react.
+    It uses the HTML5 History API which include pushState, replaceState and the popState event to keep our UI in sync with the URL.
+    It is the parent component that is used to store all other components and it uses regular URL paths.
+
+    *param helps us to search in URL
+
+    A match object contains information about how a <Route path> matched the URL. match objects contain the following properties:
+params - (object) Key/value pairs parsed from the URL corresponding to the dynamic segments of the path
+isExact - (boolean) true if the entire URL was matched (no trailing characters)
+path - (string) The path pattern used to match. Useful for building nested <Route>s
+url - (string) The matched portion of the URL. Useful for building nested <Link>
+
+so in v6 we use {id} = useParams() 
+then we can search in URL
+
+//backend 
+
+module.export = products
+
+so early in frontend of app we use component
+to render on screen but now we make use axios 
+to get products data from backend and then 
+display on screen..
+how axios works ?
+Axios allows us to work with only one promise(.then()) and with JSON data
+ by default unlike in the Fetch API where we must 
+first convert the request body to a JSON string in the first promise:
+
+proxy : 127.0.0.1:5000
+//for cross server we use proxy
+
+
+//for run both server
+"start": "node proshopbackend/server",
+    "server": "nodemon proshopbackend/server",
+    "client": "npm start --prefix proshop",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+
+    Mongoose schemas support a timestamps option. If you set timestamps: true, Mongoose will add two properties of type Date to your schema:
+
+createdAt: a date representing when this document was created
+updatedAt: a date representing when this document was last updated
+
+moongoose modal already create obeject_id

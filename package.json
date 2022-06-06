@@ -1,0 +1,31 @@
+{
+  "name": "ecommerce1",
+  "version": "1.0.0",
+  "description": "MERN shopping cart",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node proshopbackend/server",
+    "server": "nodemon proshopbackend/server",
+    "client": "npm start --prefix proshop",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node proshopbackend/seeder",
+    "data:destroyed": "node proshopbackend/seeder -d"
+  },
+  "author": "manish",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "color": "^4.2.3",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.3.4"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "nodemon": "^2.0.16"
+  }
+}
